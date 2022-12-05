@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+mainClassName = 'main/kotlin/Main'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+    implementation("com.github.ajalt.clikt:clikt:3.5.0")
+}
