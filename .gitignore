@@ -2,4 +2,4 @@ build
 out
 .gradle
 .idea
-input.txt
+Inputs/2022/Day3/input.txt
