@@ -1,8 +1,8 @@
-package main.kotlin.Y2022.Day4
+package main.kotlin.Y2022.days
 
 import common.Day
 
-class Day4 : Day {
+class D4 : Day {
     data class SectionAssignment(val elf1: Pair<Int, Int>, val elf2: Pair<Int, Int>) {
         private fun Pair<Int, Int>.contains(other: Pair<Int, Int>) = first <= other.first && second >= other.second
         fun isContained() = elf1.contains(elf2) || elf2.contains(elf1)

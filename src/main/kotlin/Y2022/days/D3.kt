@@ -1,4 +1,4 @@
-package main.kotlin.Y2022.day3
+package main.kotlin.Y2022.days
 
 import common.Day
 class Day3 : Day {
