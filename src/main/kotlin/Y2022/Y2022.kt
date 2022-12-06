@@ -9,9 +9,10 @@ class Y2022 : Year {
         val completedDays = mapOf(
             1 to D1(),
             2 to D2(),
-            3 to Day3(),
+            3 to D3(),
             4 to D4(),
             5 to D5(),
+            6 to D6(),
         )
         return completedDays.getOrDefault(day, IncompleteDay()).execute(input, part)
     }

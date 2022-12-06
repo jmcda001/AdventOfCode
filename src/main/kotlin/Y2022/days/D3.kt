@@ -1,7 +1,7 @@
 package main.kotlin.Y2022.days
 
 import common.Day
-class Day3 : Day {
+class D3 : Day {
     private fun Char.priority() = if (isUpperCase()) { code - 38 } else { code - 96 }
 
     override fun execute(input: List<String>, part: Int): String {
