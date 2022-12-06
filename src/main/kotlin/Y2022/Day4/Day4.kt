@@ -7,10 +7,9 @@ class Day4 : Day {
         private fun Pair<Int, Int>.contains(other: Pair<Int, Int>) = first <= other.first && second >= other.second
         fun isContained() = elf1.contains(elf2) || elf2.contains(elf1)
         fun isOverlapping() = (elf1.first <= elf2.second && elf1.second >= elf2.first)
-                || (elf2.first <= elf1.second && elf2.second >= elf1.first)
     }
 
-    override fun execute(input: List<String>, part: Int): Int {
+    override fun execute(input: List<String>, part: Int): String {
         val allAssignments = input.map { it.toSectionAssignments() }
         return allAssignments.fold(0) { totalOverlapping, current ->
             if (part == 1) {
@@ -18,7 +17,7 @@ class Day4 : Day {
             } else {
                 totalOverlapping + if (current.isOverlapping()) { 1 } else { 0 }
             }
-        }
+        }.toString()
     }
 
     private fun String.toSectionAssignments(): SectionAssignment {

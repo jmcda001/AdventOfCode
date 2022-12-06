@@ -2,7 +2,7 @@ package main.kotlin.Y2022.day3
 
 import common.Day
 class Day3 : Day {
-    override fun execute(input: List<String>, part: Int): Int {
+    override fun execute(input: List<String>, part: Int): String {
         TODO("Not yet implemented")
     }
 }
