@@ -15,6 +15,7 @@ class Y2022 : Year {
             6 to D6(),
             7 to D7(),
             8 to D8(),
+            9 to D9(),
         )
         return completedDays.getOrDefault(day, IncompleteDay()).execute(input, part)
     }

@@ -18,6 +18,12 @@ data class Location(val x: Int, val y: Int) {
     operator fun plus(direction: CardinalDirection): Location {
         return Location(x + direction.dx, y + direction.dy)
     }
+    operator fun minus(direction: CardinalDirection): Location {
+        return Location(x - direction.dx, y - direction.dy)
+    }
+    fun distance(other: Location): Location {
+        return Location(x - other.x, y - other.y)
+    }
 
     override fun toString(): String {
         return "($x, $y)"
